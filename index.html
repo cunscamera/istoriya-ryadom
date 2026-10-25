@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="История и интересные факты о часовне Параскевы Пятницы в Красноярске"
+  >
+  <title>Часовня Параскевы Пятницы — Красноярск</title>
+
+  <style>
+    :root {
+      --ink: #28251f;
+      --muted: #6f695f;
+      --paper: #f7f4ed;
+      --surface: #fffdf8;
+      --accent: #914a30;
+      --line: #ded8cc;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: #63301f;
+    }
+
+    .topbar {
+      padding: 13px 6%;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .topbar a {
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* Заголовок сайта без фоновой фотографии */
+    .hero {
+      min-height: 360px;
+      display: grid;
+      align-items: center;
+      color: var(--ink);
+      background: linear-gradient(135deg, #eee5d8, #f7f4ed 72%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-content {
+      width: min(var(--max-width), 88%);
+      margin: 0 auto;
+      padding: 70px 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 6rem);
+      font-weight: 400;
+      line-height: 1.02;
+    }
+
+    .hero p:last-child {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      width: min(var(--max-width), 88%);
+      margin: 0 auto;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      width: min(var(--max-width), 88%);
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 68px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 820px;
+      font-size: 1.18rem;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #d7d0c4;
+    }
+
+    figcaption {
+      padding-top: 9px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .interesting-facts {
+      display: grid;
+      gap: 16px;
+      margin: 30px 0 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: fact;
+    }
+
+    .interesting-facts li {
+      position: relative;
+      padding: 22px 24px 22px 72px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      counter-increment: fact;
+    }
+
+    .interesting-facts li::before {
+      position: absolute;
+      top: 20px;
+      left: 22px;
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      content: counter(fact, decimal-leading-zero);
+    }
+
+    .interesting-facts strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+    }
+
+    .source-mark {
+      white-space: nowrap;
+      font-family: Arial, sans-serif;
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+
+    .timeline {
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+      border-left: 1px solid var(--line);
+    }
+
+    .timeline li {
+      position: relative;
+      padding: 0 0 26px 26px;
+    }
+
+    .timeline li:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline li::before {
+      position: absolute;
+      top: 8px;
+      left: -6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+    }
+
+    .timeline strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .gallery figure:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .gallery figure:first-child img {
+      aspect-ratio: 16 / 7;
+    }
+
+    .sources {
+      padding-left: 22px;
+    }
+
+    .sources li {
+      margin-bottom: 15px;
+    }
+
+    .sources small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.83rem;
+    }
+
+    footer {
+      padding: 28px 6%;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.84rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 320px;
+      }
+
+      .columns,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery figure:first-child {
+        grid-column: auto;
+      }
+
+      .gallery figure:first-child img {
+        aspect-ratio: 4 / 3;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+
+      nav {
+        gap: 10px 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topbar">
+      <a href="#top">Красноярск · историческая справка</a>
+    </div>
+
+    <div class="hero" id="top">
+      <div class="hero-content">
+        <p class="eyebrow">Караульная гора · Красноярск</p>
+        <h1>Часовня Параскевы Пятницы</h1>
+        <p>
+          Один из наиболее узнаваемых памятников и городских ориентиров
+          Красноярска.
+        </p>
+      </div>
+    </div>
+
+    <nav aria-label="Навигация по странице">
+      <a href="#overview">О часовне</a>
+      <a href="#history">История</a>
+      <a href="#facts">Интересные факты</a>
+      <a href="#timeline">Хронология</a>
+      <a href="#architecture">Архитектура</a>
+      <a href="#meaning">Значение</a>
+      <a href="#gallery">Фотографии</a>
+      <a href="#sources">Источники</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview">
+      <p class="eyebrow">Знакомство с памятником</p>
+      <h2>Часовня над городом</h2>
+
+      <p class="intro">
+        Часовня Параскевы Пятницы находится на Караульной горе в Красноярске.
+        Это православное сооружение, посвящённое святой великомученице
+        Параскеве Пятнице. Положение на возвышенности делает часовню заметной
+        частью городского пейзажа.
+        <a class="source-mark" href="#source-1">[1]</a>
+        <a class="source-mark" href="#source-2">[2]</a>
+      </p>
+    </section>
+
+    <section id="history">
+      <div class="columns">
+        <div>
+          <p class="eyebrow">История</p>
+          <h2>Часовня на Караульной горе</h2>
+
+          <p>
+            Каменная часовня была построена в XIX веке. В кратких исторических
+            справках обычно указывают, что здание относится к середине столетия.
+            
+            <a class="source-mark" href="#source-1">[1]</a>
+            <a class="source-mark" href="#source-2">[2]</a>
+          </p>
+
+          <p>
+            Часовня связана с историческим ландшафтом Красноярска: её положение
+            на горе заметно из разных частей города. Благодаря этому она стала
+            не только религиозным сооружением, но и важным городским ориентиром.
+          </p>
+
+          <p>
+            В местных рассказах встречаются предания о появлении часовни.
+            Их содержание может различаться, поэтому такие сюжеты важно отделять
+            от сведений, подтверждённых документами.
+          </p>
+        </div>
+
+        <figure>
+          <img
+            class="scene"
+            src="Chasovnya.jpg"
+            alt="Часовня Параскевы Пятницы на Караульной горе"
+            loading="lazy"
+          >
+          <figcaption>Фотография: Евгений Воробьев</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="facts">
+      <p class="eyebrow">Пять деталей</p>
+      <h2>Интересные факты</h2>
+
+      <ol class="interesting-facts">
+        <li>
+          <strong>Необычная форма здания</strong>
+          Часовню описывают как восьмигранное сооружение с шатровым завершением.
+          Такая композиция помогает зданию выделяться на фоне городской панорамы.
+          <a class="source-mark" href="#source-1">[1]</a>
+          <a class="source-mark" href="#source-2">[2]</a>
+        </li>
+
+        <li>
+          <strong>Архитектурный проект связывают с Яковом Алфеевым</strong>
+          В краеведческих описаниях автором проекта называют архитектора
+          Якова Алфеева.
+          <a class="source-mark" href="#source-1">[1]</a>
+          <a class="source-mark" href="#source-2">[2]</a>
+        </li>
+
+        <li>
+          <strong>В строительстве участвовали местные благотворители</strong>
+          В исторических рассказах о часовне упоминается золотопромышленник
+          Пётр Кузнецов как один из благотворителей, связанных со строительством.
+          <a class="source-mark" href="#source-1">[1]</a>
+          <a class="source-mark" href="#source-2">[2]</a>
+        </li>
+
+        <li>
+          <strong>Имя святой связано со значением слова «пятница»</strong>
+          Имя Параскева восходит к греческому слову «параскеви» — «пятница».
+          Поэтому посвящение часовни связано и с календарным значением имени.
+          <a class="source-mark" href="#source-4">[4]</a>
+        </li>
+
+        <li>
+          <strong>Часовня стала частью образа российской банкноты</strong>
+          Красноярская часовня связана с оформлением банкноты достоинством
+          10 рублей образца 1997 года.
+          <a class="source-mark" href="#source-3">[3]</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="timeline">
+      <p class="eyebrow">Основные этапы</p>
+      <h2>Краткая хронология</h2>
+
+      <ol class="timeline">
+        <li>
+          <strong>XIX век</strong>
+          В Красноярске появляется каменная часовня Параскевы Пятницы.
+          В справочных материалах её относят к середине столетия.
+          <a class="source-mark" href="#source-1">[1]</a>
+          <a class="source-mark" href="#source-2">[2]</a>
+        </li>
+        <li>
+          <strong>Современность</strong>
+          Часовня остаётся религиозным сооружением, архитектурной
+          достопримечательностью и одним из городских ориентиров.
+          <a class="source-mark" href="#source-1">[1]</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="architecture">
+      <div class="columns">
+        <figure>
+          <img
+            class="scene"
+            src="Chasovnya1.jpg"
+            alt="Архитектурные детали часовни Параскевы Пятницы"
+            loading="lazy"
+          >
+          <figcaption>Фотография: Влада Самарина</figcaption>
+        </figure>
+
+        <div>
+          <p class="eyebrow">Архитектура</p>
+          <h2>Выразительный силуэт на возвышенности</h2>
+
+          <p>
+            Архитектура часовни сочетает компактный объём здания и заметное
+            завершение кровли. Её силуэт хорошо читается на фоне неба и
+            окружающей застройки.
+            <a class="source-mark" href="#source-1">[1]</a>
+          </p>
+
+          <p>
+            Восьмигранная форма и шатровое завершение относятся к характерным
+            особенностям здания. Они придают часовне узнаваемый облик,
+            который особенно заметен при взгляде на неё издалека.
+            <a class="source-mark" href="#source-1">[1]</a>
+            <a class="source-mark" href="#source-2">[2]</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="meaning">
+      <p class="eyebrow">Значение для города</p>
+      <h2>Памятник и часть красноярского пейзажа</h2>
+
+      <p>
+        Часовня занимает заметное место в городском ландшафте Красноярска.
+        Её воспринимают как религиозный памятник, архитектурную
+        достопримечательность и один из ориентиров, связанных с Караульной горой.
+        <a class="source-mark" href="#source-1">[1]</a>
+        <a class="source-mark" href="#source-2">[2]</a>
+      </p>
+
+      <figure>
+        <img
+          class="scene"
+          src="Chasovnya2.jpg"
+          alt="Панорама Красноярска с Караульной горы"
+          loading="lazy"
+        >
+        <figcaption></figcaption>
+      </figure>
+    </section>
+
+    <section id="gallery">
+      <p class="eyebrow">Фотографии</p>
+      <h2>Часовня и её детали</h2>
+
+      <div class="gallery">
+        <figure>
+          <img
+            class="scene"
+            src="Chasovnya3.jpg"
+            alt="Общий вид часовни Параскевы Пятницы"
+            loading="lazy"
+          >
+          <figcaption>
+            Источник фотографии:
+            <a
+              href="https://m.fotostrana.ru/public/post/234355/1848790653/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Fotostrana</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            class="scene"
+            src="Chasovnya4.jpg"
+            alt="Фрагмент фасада часовни"
+            loading="lazy"
+          >
+          <figcaption>
+            Источник фотографии:
+            <a
+              href="https://200eg.krskstate.ru/fofofakts/0/album/5750/print/yes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >историко-культурный проект Красноярского края</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            class="scene"
+            src="Chasovnya5.jpg"
+            alt="Старинная фотография Красноярска"
+            loading="lazy"
+          >
+          <figcaption>Фотография: Alex1978</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="sources">
+      <p class="eyebrow">Источники</p>
+      <h2>Источники информации</h2>
+
+      <ol class="sources">
+        <li id="source-1">
+          <a
+            href="https://kkkm.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Красноярский краевой краеведческий музей
+          </a>
+          <small>
+            Музейные и краеведческие материалы по истории Красноярска.
+          </small>
+        </li>
+
+        <li id="source-2">
+          <a
+            href="https://www.krskstate.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Официальный портал Красноярского края
+          </a>
+          <small>
+            Региональные материалы об истории и культурном наследии края.
+          </small>
+        </li>
+
+        <li id="source-3">
+          <a
+            href="https://www.cbr.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Банк России
+          </a>
+          <small>
+            Официальные сведения о российских банкнотах и их оформлении.
+          </small>
+        </li>
+
+        <li id="source-4">
+          <a
+            href="https://gramota.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Справочно-информационный портал «Грамота.ру»
+          </a>
+          <small>
+            Справочные материалы о русском языке и происхождении слов.
+          </small>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    Историческая справка о часовне Параскевы Пятницы · Красноярск
+  </footer>
+</body>
+</html>
